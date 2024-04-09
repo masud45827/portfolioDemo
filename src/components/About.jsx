@@ -2,9 +2,14 @@ import React from "react";
 import image from "../assets/image3.jpg";
 const About = () => {
   return (
+    <div>
+      <div className="flex flex-col items-center justify-center">
+      <h1 className="pt-10 w-3/4 pb-5 text-3xl text-center">About</h1>
+      <hr className="h-[3px] w-[150px] sm:w-[200px] md:w-[300px] lg:w-[300px] bg-black text-center"/>
+      </div>
     <div className="flex flex-col justify-center items-center sm:mt-10 p-20 sm:flex-col md:flex-row">
-      <img className="sm:mb-5 md:w-2/5 lg:h-[400px]" src={image} />
-      <div className="text-sm sm:text-[15px] md:w-3/5 md:pl-5 lg:text-[20px]">
+      <img className="border-2 border-solid border-blue-300 rounded-lg  sm:mb-5 md:w-2/5 lg:h-[320px] lg:w-[300px]" src={image} />
+      <div className="text-sm sm:text-[17px] md:w-3/5 md:pl-5 lg:text-[20px]">
         <p className="text-justify">
           I am a recent graduate from Bangabandhu Sheikh Mujibur Rahman Science
           and Technology University, Gopalganj
@@ -30,6 +35,7 @@ const About = () => {
           the 97th position at the ICPC Dhaka regional programming contest.
         </p>
       </div>
+    </div>
     </div>
   );
 };

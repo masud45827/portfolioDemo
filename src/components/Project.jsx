@@ -12,8 +12,9 @@ const Project = () => {
     const images = [mobile, web, ml, javaswing, restaurent, student];
 
     return (
-        <div className="pt-10 flex flex-col justify-center items-center bg-zinc-600 sm:flex-col md:flex-col  lg:flex-row lg: gap-4  flex-wrap">
-            {texts.map((text, index) => (
+        <div className="pt-10 flex flex-col justify-center items-center bg-zinc-600 sm:flex-col md:flex-row  lg:flex-row lg: gap-4 xl:flex-row  flex-wrap">
+            {
+            texts.map((text, index) => (
                 <ProjectCard key={index} text={text} image={images[index]} />
             ))}
         </div>

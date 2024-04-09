@@ -13,8 +13,11 @@ function Contact() {
   };
   return (
     <div>
-        <h1 className="text-center text-3xl p-5">Contact</h1>
-        <div  className="flex flex-col justify-center items-center">
+      <div className="flex flex-col items-center justify-center">
+      <h1 className="pt-10 w-3/4 pb-5 text-3xl text-center">Contact</h1>
+      <hr className="h-[3px] w-[150px] sm:w-[200px] md:w-[300px] lg:w-[300px] bg-black text-center"/>
+      </div>
+        <div  className="flex flex-col justify-center items-center pt-4">
           {showMessage?<ContactForm/>:<ContactFormText/>}
           <button
            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 m-3 rounded"
